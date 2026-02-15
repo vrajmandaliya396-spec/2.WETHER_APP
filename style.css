@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: BRUSHSCRIPT MT, cursive;
 }
 
 body{
@@ -10,31 +11,56 @@ body{
     height: 100vh;
     background: #ffd104af;
 }
+img{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.15;
+}
 
 .main{
     display: flex;
     background: #ffeed1;
     width: 30vw;
-    height: 30vh;
+    
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     flex-direction: column;
-    
+    gap: 10px;
+}
+i{
+    font-size: 45px;
+    color: #ff6f00;
+    margin-bottom: 10px;
+    font-family: BRUSHSCRIPT MT, cursive;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.title{
+   font-size: 45px;
+    color: #ff6f00;
+    font-family: BRUSHSCRIPT MT, cursive;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 h1{
-    font-size: 30px;
-    color: #ff6f00;
-    margin-bottom: 30px;
+    color: #000000;
 }
+
 .form_container{
     display: flex;
     width: 100%;
     justify-content: center;
     background: #ffffff;
     width: 27vw;
-    height: 30px;
+    height: 45px;
     border-radius: 50px;
+    margin-bottom: 20px;
+
+
 }
 input{
     width: 100%;
@@ -42,8 +68,11 @@ input{
     border: none;
     background: none;
     outline: none;
+    font-size: 15px;
+    margin-left: 15px;
+    
 }
-button{
+.search-btn{
     border: none;
     background: none;
     outline: none;
@@ -52,11 +81,100 @@ button{
     align-items: center;
     justify-content: center;
     display: flex;
+    width: 120px;
+    font-size: 15px;
+    font-family: BRUSHSCRIPT MT, cursive;
 }
-button:hover{
+.search-btn:hover{
     background: #ff6f00;
+    color: #ffffff;
     border-radius: 50px;
     outline: none;
     cursor: pointer;
     
+    
 }
+input::placeholder{
+    color: #d3d3d3;
+    font-weight: lighter;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.Featues_buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    width: 27vw;
+    height: 45px;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Featues_buttons button{
+    color: #ff6f00;
+     border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 120px;
+    font-size: 15px;
+    font-family: BRUSHSCRIPT MT, cursive;
+    font-size: 15px;
+    font-weight: bold;
+    background: white;
+    border-radius: 50px;
+    box-shadow: 0 10px 15px rgba(255, 111, 0, 0.2);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.253);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.Featues_buttons button:hover{
+    background: #ff6f00;
+    color: #ffffff;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+}
+.data_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: #ffffff;
+    width: 90%;
+    height: 90%;
+    border-radius: 25px;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+}
+.temp-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background: none;
+    width: 27vw;
+    height: 45px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+i{
+    font-size: 81px;
+    color: #ff6f00;
+}
+h2{
+    color: #ff6f00;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+

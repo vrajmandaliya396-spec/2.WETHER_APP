@@ -5,17 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-
+    <img src="bg.webp" alt="">
     <div class="main">
-        <h1>Wether App</h1>
+        <h1 class="title">Weather App</h1>
         <div class="form_container">
-            <input type="text" id="city-input" placeholder="Enter city name">
-            <button id="search-btn">Search</button>
+            <input type="text" class="city-input" placeholder="Enter city name">
+            <button class="search-btn">Search</button>
+        </div>
+        <!-- <div class="Featues_buttons">
+            <button>
+                Temperature    
+            </button><button>
+                Weather    
+            </button><button>
+                City name    
+            </button>
+        </div> -->
+        <div class="data_container">
+            <div class="temp-container">
+                <i class="fas fa-thermometer-half"></i>
+                <h1>45</h1> 
+            </div>
+        <h1>Sunny Weather</h1>
+        <h2>in Ahmedabad</h2>
+        </div> 
+
     </div>
 
     
-    
+<script src="script.js"></script>
 </body>
 </html>
