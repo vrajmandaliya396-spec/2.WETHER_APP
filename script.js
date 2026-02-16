@@ -37,9 +37,8 @@ search_btn.addEventListener("click", async function(e){
 
     city_input.value = "";
 
-    
-}   
 
+}   
             
 });
 
