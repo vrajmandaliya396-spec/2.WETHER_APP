@@ -1,180 +1,136 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: BRUSHSCRIPT MT, cursive;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
-    justify-content: center;
+body {
     display: flex;
+    justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #ffd104af;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    position: relative;
 }
-img{
+
+/* Background Image */
+body > img {
     width: 100vw;
     height: 100vh;
-    display: flex;
     position: absolute;
     z-index: -1;
     opacity: 0.15;
+    object-fit: cover;
 }
 
-.main{
+/* Main Card */
+.main {
     display: flex;
-    background: #ffeed1;
-    width: 30vw;
-    
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
     flex-direction: column;
-    gap: 10px;
-}
-i{
-    font-size: 45px;
-    color: #ff6f00;
-    margin-bottom: 10px;
-    font-family: BRUSHSCRIPT MT, cursive;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.title{
-   font-size: 45px;
-    color: #ff6f00;
-    font-family: BRUSHSCRIPT MT, cursive;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-h1{
-    color: #000000;
-}
-
-.form_container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    background: #ffffff;
-    width: 27vw;
-    height: 45px;
-    border-radius: 50px;
-    margin-bottom: 20px;
-
-
-}
-input{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: none;
-    outline: none;
-    font-size: 15px;
-    margin-left: 15px;
-    
-}
-.search-btn{
-    border: none;
-    background: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+    background: #ffffff;
+    width: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.title {
+    font-size: 32px;
+    color: #ff6f00;
+    font-weight: 600;
+}
+
+/* Input + Button Container */
+.form_container {
     display: flex;
-    width: 120px;
-    font-size: 15px;
-    font-family: BRUSHSCRIPT MT, cursive;
-}
-.search-btn:hover{
-    background: #ff6f00;
-    color: #ffffff;
+    width: 100%;
+    background: #ffffff;
     border-radius: 50px;
-    outline: none;
-    cursor: pointer;
-    
-    
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
-input::placeholder{
-    color: #d3d3d3;
-    font-weight: lighter;
+
+/* Input */
+.city-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.city-input::placeholder {
+    color: #bbb;
     font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.Featues_buttons{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    width: 27vw;
-    height: 45px;
-    border-radius: 50px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.Featues_buttons button{
-    color: #ff6f00;
-     border: none;
-    background: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    width: 120px;
-    font-size: 15px;
-    font-family: BRUSHSCRIPT MT, cursive;
-    font-size: 15px;
-    font-weight: bold;
-    background: white;
-    border-radius: 50px;
-    box-shadow: 0 10px 15px rgba(255, 111, 0, 0.2);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.253);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-}
-.Featues_buttons button:hover{
+
+/* Button */
+.search-btn {
+    border: none;
+    padding: 12px 20px;
     background: #ff6f00;
-    color: #ffffff;
-    border-radius: 50px;
-    outline: none;
+    color: white;
     cursor: pointer;
+    transition: 0.3s ease;
+    font-weight: 500;
 }
-.data_container{
+
+.search-btn:hover {
+    background: #e65100;
+}
+
+/* Weather Data Card */
+.data_container {
     display: flex;
-    width: 100%;
-    justify-content: center;
-    background: #ffffff;
-    width: 90%;
-    height: 90%;
-    border-radius: 25px;
-    align-items: center;
-    gap: 30px;
-    margin-bottom: 20px;
     flex-direction: column;
-}
-.temp-container{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    background: none;
-    width: 27vw;
-    height: 45px;
-    border-radius: 50px;
-    margin-bottom: 20px;
-    font-size: 50px;
-    font-weight: bold;
     align-items: center;
     gap: 15px;
-    margin-top: 50px;
+    width: 100%;
+    padding: 25px;
+    background: #fdfdfd;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
-i{
-    font-size: 81px;
+
+/* Temperature Section */
+.temp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 35px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Thermometer Icon */
+.temp-container i {
+    font-size: 50px;
     color: #ff6f00;
 }
-h2{
+
+/* Weather Icon */
+.icon {
+    width: 100px;
+    height: 100px;
+}
+
+/* Weather Text */
+.weather-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+/* City Name */
+.data_container h2 {
+    font-size: 18px;
     color: #ff6f00;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
+    font-weight: 600;
 }
 
